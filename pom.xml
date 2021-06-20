@@ -58,13 +58,8 @@
 			<version>8.1.8</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
-		</dependency -->
-		<!-- jsp support by jetty -->
+		
+		
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-jsp</artifactId>
@@ -125,7 +120,7 @@
 			<version>2.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- cos -->
+		
 		<dependency>
 			<groupId>com.jfinal</groupId>
 			<artifactId>cos</artifactId>
@@ -150,14 +145,7 @@
 			<scope>provided</scope>
 		</dependency>
 		
-		<!--
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.44</version>
-			<scope>provided</scope>
-		</dependency>
-		-->
+		
 		
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -175,7 +163,7 @@
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
-			<version>3.2.1</version>
+			<version>3.2.0</version>
 			<scope>provided</scope>
 		 </dependency>
 		 
@@ -193,7 +181,7 @@
 			<resource>
 				<directory>src/main/java</directory>
 				<includes>
-					<!-- **/* 写法，可以将各级子目录下的资源文件被打包 -->
+					
 					<include>**/*.jf</include>
 				</includes>
 				<filtering>false</filtering>
@@ -217,7 +205,7 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.10.3</version>
 				<configuration>
-					<!-- 解决 java8  发布到 maven 异常 -->
+					
 					<additionalparam>-Xdoclint:none</additionalparam>
 					<encoding>UTF-8</encoding>
 					<outputDirectory>${basedir}</outputDirectory>
@@ -225,7 +213,7 @@
 				</configuration>
 			</plugin>
 
-<!-- 安装源码到本地仓库 -->
+
 <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-source-plugin</artifactId>
